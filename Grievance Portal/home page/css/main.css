@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+section {
+  padding: 7em 0;
+}
+
+ul{
+margin: 0;
+padding: 0;
+list-style: none;
+height: 40px;
+line-height: 20px;
+background-color: rgb(0, 0, 0);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+}
+
+li{
+  float: right;
+  border-left: 1px solid #464545;
+  display: inline-blocks;
+  padding: 5px 10px;
+}
+.logo img{
+  position:absolute;
+  margin-top:5px;
+  margin-left:10px;
+}
+
+a{
+  display: block;
+  padding: 5px 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: darkslateblue;
+  color: #F0c330;
+  transition: 0.5s;
+}
+
+.active a{
+  background-color: darkslateblue;
+}
+
+.load{
+  animation: slide 2s;
+}
+.slider{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  animation: slide 40s infinite;
+}
+
+.content{
+  color:#fff;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.principal{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.principal h1{
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.principal h3{
+  font-size: 20px;
+}
+
+@keyframes slide{
+  0%{
+    background-image: url(../img/ss1.jpg);
+  }
+  20%{
+    background-image: url(../img/ss1.jpg);
+  }
+  20.01%{
+    background-image: url(../img/ss2.jpeg);
+  }
+  40%{
+    background-image: url(../img/ss2.jpeg);
+  }
+  40.01%{
+    background-image: url(../img/ss3.jpeg);
+  }
+  60%{
+    background-image: url(../img/ss3.jpeg);
+  }
+  60.01%{
+    background-image: url(../img/ss4.png);
+  }
+  80%{
+    background-image: url(../img/ss4.png);
+  }
+  80.01%{
+    background-image: url(../img/ss5.jfif);
+  }
+  100%{
+    background-image: url(../img/ss5.jfif);
+  }
+}
+
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px 15px;
+  background: var(--clr-accent, rgb(60, 60, 255));
+  border-radius: 10px;
+
+}
+
+.btn:hover,
+.btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
+}
+
+.primary-title {
+  font-size: 70px;
+  padding-bottom: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 60px;
+  text-align: center;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 50px;
+  background: url(../img/main.jpg) fixed center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+.featured {
+  background: rgb(255, 255, 255);
+}
+
+
+
+.portal {
+ background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+.portal__title {
+  font-size: 50px;
+  margin: 10px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.portal__image {
+  margin: 0 0 0 0;
+}
+
+
+
+.school {
+  background-image: url(../img/schoolbanner.jpg);
+  margin: 10px;
+  font-size:20px;
+  color:#fff;
+  padding: 15px;
+  font-weight: 700;
+  background-color: rosybrown;
+  text-align: center;
+
+}
+
+.hotel {
+  background-image: url(../img/restaurant.jfif);
+  margin: 10px;
+  font-size:20px;
+  color:#fff;
+  padding: 15px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.movie {
+  background-image: url(../img/movie\ theater.jpg);
+  margin: 10px;
+  font-size:20px;
+  color:#fff;
+  padding: 15px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.about-us {
+  background-color: rgb(255, 92, 92);
+  padding:20px;
+  color:rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+ }
+
+ .us{
+   color:cornsilk;
+ }
+
