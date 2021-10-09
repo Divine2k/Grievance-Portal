@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="container" id="container">
+
+<div class="form-container sign-up-container">
+
+<form>
+	<h1>Create Account</h1>
+	<input type="text" name="name" placeholder="Full name" required>
+	<input type="email" name="email" placeholder="Email" class="remail">
+	<input type="password" name="password" placeholder="Password" class="rpsw">
+	<button type="submit" class="rccheck">Sign Up</button>
+</form>
+</div>
+
+
+
+
+
+<div class="form-container sign-in-container">
+	<form>
+		<h1>Login</h1>
+	<input type="email" name="email" placeholder="Email" class="mail" >
+	<input type="password" name="password" placeholder="Password" class="psw">
+	<a href="#"><b>Forgot Your Password</b></a>
+
+	<button class="submitCred" type="submit"  >Login</button>
+	</form>
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+			<h1>Already have a account?</h1>
+			<button class="ghost" id="signIn">Login</button>
+		</div>
+		<div class="overlay-panel overlay-right">
+			<h1>Create an account!</h1>
+			<button class="ghost" id="signUp">Sign Up</button>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+
+
+
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+	const email = document.getElementsByClassName('mail');
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+
+
+
+
+	//Sign-In validation page
+	$('.submitCred').click(function(){
+		var valid = true
+		var email = $(".mail").val()
+
+		$(".error").remove();
+
+		//Email Verification
+
+		if ((email != undefined) && email === "") {
+        $(".mail").css("outline", "1px solid red");
+        $('.mail').after('<span class="error">Please! Enter Email Address.</span>');
+        valid = false;
+    } else {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (!(regex.test(email))) {
+
+            $(".mail").css("outline", "1px solid red");
+            $('.mail').after('<span class="error">Please! Enter Valid Email Address.</span>');
+
+            valid = false;
+
+        } else {
+            $(".mail").css("outline", "1px solid #04AA6D");
+        }
+    }
+
+	//Password Validation
+	var password = $(".psw").val()
+
+	if (password === "") {
+        $(".psw").css("outline", "1px solid red");
+        $('.psw').after('<span class="error">Please! Enter Password.</span>');
+        valid = false;
+    } else {
+        if (!(password.length >= 6)) {
+            $(".psw").css("outline", "1px solid red");
+            $('.psw').after('<span class="error">Please! Enter Password Must Be 6 Characters Long.</span>');
+            valid = false;
+        } else {
+            $(".psw").css("outline", "1px solid 04AA6D");
+        }
+	}
+		return valid
+	});
+	
+
+
+
+
+
+
+	//Registration validation Page
+
+	$('.rccheck').click(function(){
+		var valid = true
+		var remail = $(".remail").val()
+
+		$(".error").remove();
+
+		//Email Verification
+
+		if ((remail != undefined) && email === "") {
+        $(".remail").css("outline", "1px solid red");
+        $('.remail').after('<span class="error">Please! Enter Email Address.</span>');
+        valid = false;
+    } else {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (!(regex.test(remail))) {
+
+            $(".remail").css("outline", "1px solid red");
+            $('.remail').after('<span class="error">Please! Enter Valid Email Address.</span>');
+
+            valid = false;
+
+        } else {
+            $(".remail").css("outline", "1px solid #04AA6D");
+        }
+    }
+
+	//Password Validation
+	var rpassword = $(".rpsw").val()
+
+	if (rpassword === "") {
+        $(".rpsw").css("outline", "1px solid red");
+        $('.rpsw').after('<span class="error">Please! Enter Password.</span>');
+        valid = false;
+    } else {
+        if (!(rpassword.length >= 6)) {
+            $(".rpsw").css("outline", "1px solid red");
+            $('.rpsw').after('<span class="error">Please! Enter Password Must Be 6 Characters Long.</span>');
+            valid = false;
+        } else {
+            $(".rpsw").css("outline", "1px solid 04AA6D");
+        }
+	}
+		return valid
+	});
+</script>
+
+
+
+</body>
+</html>
