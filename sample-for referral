@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <title>Inject</title>
+</head>
+<body>
+    <div class="section">
+        <form action="">
+            <p>Enter your name:</p>
+            <input type="text" class="firstName" placeholder="First Name">
+            <input type="text" placeholder="Last name">
+            <br>
+            <p>Please select your gender:</p>
+              <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">Male</label><br>
+              <input type="radio" id="css" name="fav_language" value="CSS">
+              <label for="css">Female</label><br>
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript">Others</label>
+
+                <br><br>
+                <label for="">Choose an Anime:</label>
+            <select name="" id="">
+              <option value="">Select</option>
+              <option value="">Overflow</option>
+              <option value="">Kiss x Sis</option>
+              <option value="">Redo of Healer</option>
+            </select>
+            <br><br>
+          </form>
+        <textarea class="textBox" placeholder="Enter your Grievience!" name="w3review" rows="20" cols="50"></textarea>
+            <br><br>
+        <button type="submit" class="submit">Submit</button>
+        <div class="block">
+            <p class="box">Real grievience</p>
+            <img class="garbage" src="C:\Users\User\OneDrive\Test\dustbin.png" alt="">
+        </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
