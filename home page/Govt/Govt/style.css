@@ -1,0 +1,83 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #fff;
+  }
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.section{
+    margin: 2vh;
+}
+.textBox{
+    width: 94%;
+    height: 250px;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 2px solid black;
+    resize: none;
+
+}
+.submit{
+    margin-left: 165vh;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: red;
+    border: 2px solid black;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+}
+.textBox:focus{
+    border: 3px solid black;
+}
+.box{
+    padding-top: 2vh;
+    padding-left: 2vh;
+    width:100vh;
+    height: 25vh;
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 15px;
+    margin-left: 10vh;
+}
+img{
+    width: 50px;
+    height: 40px;
+    margin-left: 100vh;
+}
+
+img:hover{
+    cursor: pointer;
+}
+.block{
+    margin-top: 2vh;
+}
+
+input{
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.form-peice {
+    background: rgb(255, 232, 252);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    padding: 30px 55px 60px;
+    overflow: hidden;
+  }
+  .addbox{
+    width: 94%;
+    height: 250px;
+    font-size: 20px;
+    border-radius: 2px;
+    border: 2px solid black;
+    resize: none;
+  }
